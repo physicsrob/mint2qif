@@ -5,11 +5,6 @@ var _ = require('underscore');
 var fs = require('fs');
 var csvtoarray = require('./csvtoarray');
 
-function processMintCSVLine(l) {
-    var args = _.map(l.split(','), function(x) { return x.replace(/\"/g,''); });
-    console.dir(args);
-}
-
 var qifTemplate = _.template("!Account\nN<%= account %>\nD\nX\n^\n" +
 "!Type:Bank\nD<%= datestr %>\nT<%= amount %>\nP<%= payee %>\nM<%= memo %>\nL<%= category %>\nN<%= type %>\n^\n");
 
