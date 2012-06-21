@@ -1,0 +1,11 @@
+{
+    "name": "mint2qif"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "underscore": ">= 1.1.7"
+    , "Deferred": ">= 0.1.1"
+    , "request": "> 0.0.1"
+    , "read": "> 0.0.1"
+  }
+}
